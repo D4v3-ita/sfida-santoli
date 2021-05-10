@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- BOOTSTRAP E LINK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- GOOGLE FONT DI DAVIDE: DotGothic16 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    
+
+    <title>Prendi il div!</title>
+</head>
+<body>
+
+    <h1 class="davH1">_Prendi il div! (Se ci riesci)_</h1>
+    <div class="davideContenitore" id="davideContenitore">
+
+        <!-- Schermata iniziale --> 
+        <div id="davideRegole" class="davideDivAvanti">
+            <h3 class="h3regole">Benvenuto a "Prendi il div"</h3>
+            <input type="button" value="AVANTI" id="davideRegole" class="davideBottone1">
+        </div>
+        
+        <!-- Schermata secondaria con spiegazione regole del gioco -->
+        <div id="davideGioca" class="davideDivGioca">
+            <h3 class="h3gioca">Prendi il div</h3>
+            <p>Comparirà a schermo un bersaglio da cliccare<br>
+                Ogni volta che clicchi il bersaglio, quest'ultimo si rimpicciolisce<br>
+                Ogni volta che clicchi il bersaglio il timer di 10 secondi si resetta<br>
+                Lo scopo del gioco è quello di riuscire a cliccare il bersaglio più volte che puoi<br>
+                prima che scada il tempo.<br>
+                <br>
+                Occhio alla direzione del bersaglio...
+            </p>
+            <!--  REGOLE -->
+            <input type="button" value="INIZIA A GIOCARE" id="davideGioca" class="davideBottone2">
+        </div>
+
+        <!-- div di caricamento -->
+        <div class="davideContieneCaricamento" id="davideContieneCaricamento">
+            <div class="davideCaricamento">
+                <h3 class="h3caricamento">Caricamento...</h3>
+
+                <progress value="0" max="7" id="davProgressBar" class="davProgressBar"></progress>
+                <br><br>
+
+                <h5 class="h5freddure">Intanto che carica sentite questa:</h5>
+                <p id="davideFreddure" class="h5freddure"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- div del gioco -->
+    <div>
+        <div id="davideSxGiocando" class="davideSxGiocando">
+            <!-- div bersaglio che si muoverà sullo schermo -->
+            <div class="davideBersaglio" id="davideBersaglio"></div>
+        </div>
+        
+        <!-- div a destra per memorizzare i punti -->
+        <div class="davideDxGiocando" id="davideDxGiocando">
+            <div class="davidePunteggioTimer">Tempo mancante: <br><span id="time">10</span> secondi!</div> <!-- 00:10 -->
+
+            <h4 class="davidePunteggioRealizzato">Click corretti: <span id="davidePunteggioRealizzato"></span></h4>
+
+            <h4 class="davidePunteggioSbagliato">Click errati: <span id="davidePunteggioSbagliato"></span></h4>
+
+            <h4 class="davidePunteggioPercentuale">Precisione: <span id="davidePunteggioPercentuale"></span>%</h4>
+            
+        </div>
+    </div>
+    
+
+    <!-- div che appare quando hai perso -->
+    <div class="davideContienePerso" id="davideContienePerso">
+        <div class="davidePerso">
+            <h3 class="h3Perso">PARTITA TERMINATA</h3>
+            <br><br>
+            <h4>Punteggio realizzato: <span id="davidePunteggioRealizzatoFine"></span></h4><br>
+            <p>↓ Puoi sempre riprovare ↓</p>
+            <br>
+
+            <input type="button" value="RIPROVA" id="davideRiprovaP" class="davideRiprova">
+        </div>
+    </div>
+
+
+    <!-- div che appare quando hai vinto -->
+    <div class="davideContieneVinto" id="davideContieneVinto">
+        <div class="davideVinto">
+            <h3 class="h3Vinto">HAI VINTO!!</h3>
+            <br><br>
+
+            <h4>Congratulazioni, dammi il 5!!</h4>
+            <span class="davideDammiIl5">
+                <i class="far fa-hand-paper davFontAwesome"></i>
+            </span>
+            <br><br>
+
+            <span id="davideSiMaContieniti">Così si fa! &#129315;</span>
+
+            <p>↓ Qua c'è il tasto per ritentare, se ne sei così tanto capace &#128526; ↓</p>
+            <br>
+
+            <input type="button" value="RIPROVA" id="davideRiprovaV" class="davideRiprova">
+            
+        </div>
+    </div>
+      
+    
+    <!-- Parte finale della pagina con tutti i contatti -->
+    <footer id="footer" class="davFooter">
+        <span class="davideCredits">Credits: Davide Andreana | Contatti → </span>
+        <a href="https://github.com/D4v3-ita" target="_blank">
+            <i class="fab fa-github fa-2x davFontAwesome"></i>
+        </a>
+        &nbsp;
+        <a href="https://www.instagram.com/davide_andreana_/" target="_blank">
+            <i class="fab fa-instagram fa-2x davFontAwesome"></i>
+        </a>
+    </footer>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

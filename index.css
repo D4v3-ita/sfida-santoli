@@ -1,0 +1,209 @@
+.davH1{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 5vh;
+    color: black;
+}
+
+/* div che contiene tutto */
+.davideContenitore{
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    width: 90%;
+    height: 80vh;
+}
+
+/* div iniziali */
+.davideDivAvanti{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.davideDivGioca{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* per icone di Font Awesome */
+.davFontAwesome{
+    color: black;
+}
+
+.davFooter{
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    height: 3em;
+    margin-top: 2%;
+}
+
+.davideCredits{
+    font-family: 'Inconsolata', monospace;
+    font-size: 5vh;
+}
+
+.h3regole{
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: -5em;
+}
+
+.davideBottone1{
+    margin: 0 auto;
+    display: block;
+    margin-top: 8em;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    margin-bottom: 20%;
+}
+
+.h3gioca, .h3Perso, .h3Vinto{
+    margin-top: 17vh;
+}
+
+
+.davideBottone2{
+    margin: 0 auto;
+    display: block;
+    margin-top: 8em;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    margin-bottom: 20%;
+}
+
+#davideGioca{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+/* div per il caricamento */
+.davideContieneCaricamento, .davideContienePerso, .davideContieneVinto{
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.davideCaricamento{
+    background-color: white;
+    opacity: 100%;
+    top: 4em;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    width: 90%;
+    height: 40em;
+}
+
+.h3caricamento{
+    position: relative;
+    text-align: center;
+    margin-top: 6em;
+    
+}
+
+.davideContainer{
+    width: 90%;
+    height: 40em;
+    margin: 0 auto;
+    display: block;
+    margin-top: 4em;
+}
+
+.davProgressBar{
+    display: block;
+    margin: 0 auto;
+}
+
+.h5freddure{
+    text-align: center;
+}
+
+/* div che si mostra quando si sta per giocare */
+.davideSxGiocando{
+    float: left;
+    margin-left: 4vw;
+    border: 2px solid black;
+    width: 55%;
+    height: 80vh;
+    margin-bottom: 4vh;
+}
+
+.davideDxGiocando{
+    text-align: center;
+    float: right;
+    margin-right: 4vw;
+    border: 2px solid black;
+    width: 30%;
+    height: 80vh;
+    margin-bottom: 4vh;
+}
+
+
+.davideBersaglio{
+    border-radius: 50%;
+    background: radial-gradient(circle at 65% 15%, rgb(0, 195, 255), rgb(255, 0, 212));
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+}
+
+/* contatori per punteggio corretto, errato e percentuale */
+.davidePunteggioRealizzato, .davidePunteggioRealizzatoFine{
+    margin-top: 10vh;
+    color: rgb(38, 207, 38);
+}
+
+.davidePunteggioSbagliato{
+    margin-top: 10vh;
+    color: red;
+}
+
+.davidePunteggioPercentuale{
+    margin-top: 10vh;
+    color: rgb(127, 33, 214);
+}
+
+.davidePunteggioTimer{
+    margin-top: 10vh;
+    font-size: 2em;
+}
+
+/* div che viene mostrato quando hai perso */
+.davidePerso, .davideVinto{
+    text-align: center;
+    background-color: white;
+    opacity: 100%;
+    top: 4em;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    width: 90%;
+    height: 80vh;
+}
+
+/* bottone per ricominciare */
+.davideRiprova{
+    font-size: 2em;
+}
+
+/* div che viene mostrato quando hai vinto */
+.davideDammiIl5{
+    cursor: -webkit-grab; cursor: grab;
+    font-size: 5vh;
+}
+/* scritta quando batti il 5 */
+#davideSiMaContieniti{
+    font-size: 5vh;
+}
